@@ -1,0 +1,60 @@
+:root {
+    --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+    --orange: #fca61f;
+    --black: #242d49;
+    --gray: #788097;
+    --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+    --pink: #FF919D;
+    --glass: rgba(255, 255, 255, 0.54);
+    --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+    --boxShadow2: 0px 20px 75px rgb(0 0 0 / 10%);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --activeItem: #f799a354;
+    --body-color: whitesmoke;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* transition */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.7s ease;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: var(--boxShadow2);
+    height: 10vh;
+}
+.logo {
+    font-weight: 20;
+    font-size: 1.5rem;
+}
+.logo>.fa-paper-plane{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.link-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.link,
+a {
+    color: #000;
+}
+
+.link>a:hover {
+    color: gray;
+    transition: var(--tran-05);
+    border-bottom: 1px solid gray;
+}
+
+.fa-circle-user {
+   color: var(--primary-color);
+   font-size: 2rem;
+}
